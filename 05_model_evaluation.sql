@@ -1,0 +1,14 @@
+USE DATABASE FRAUD_DB;
+USE SCHEMA PUBLIC;
+
+-- Show model evaluation metrics
+CALL FRAUD_MODEL!SHOW_EVALUATION_METRICS();
+
+-- Show global evaluation metrics
+CALL FRAUD_MODEL!SHOW_GLOBAL_EVALUATION_METRICS();
+
+-- Show confusion matrix
+CALL FRAUD_MODEL!SHOW_CONFUSION_MATRIX();
+
+-- Show feature importance
+CALL FRAUD_MODEL!SHOW_FEATURE_IMPORTANCE();
